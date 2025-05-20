@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SmoothGradient",
+    name: "SmoothStepGradient",
     platforms: [
         .iOS(.v14),
         .macOS(.v11),
@@ -14,8 +14,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SmoothGradient",
-            targets: ["SmoothGradient"]
+            name: "SmoothStepGradient",
+            targets: ["SmoothStepGradient"]
         )
     ],
     dependencies: [
@@ -26,12 +26,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SmoothGradient"
+            name: "SmoothStepGradient"
         ),
         .testTarget(
-            name: "SmoothGradientTests",
+            name: "SmoothStepGradientTests",
             dependencies: [
-                "SmoothGradient",
+                "SmoothStepGradient",
                 .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
             ],
             exclude: [

@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name         = "SmoothGradient"
+  spec.name         = "SmoothStepGradient"
   spec.version      = "1.0.0"
   spec.summary      = "A SwiftUI package for creating smooth gradients using easing functions."
 
@@ -14,5 +14,5 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = "7.0"
 
   spec.source       = { :git => "https://github.com/raymondjavaxx/SmoothGradient.git", :tag => "#{spec.version}" }
-  spec.source_files = "Sources/SmoothGradient/**/*.swift"
+  spec.source_files = "Sources/SmoothStepGradient/**/*.swift"
 end

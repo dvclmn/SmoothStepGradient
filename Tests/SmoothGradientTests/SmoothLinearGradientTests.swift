@@ -11,7 +11,7 @@
 import XCTest
 import SwiftUI
 import SnapshotTesting
-import SmoothGradient
+import SmoothStepGradient
 
 #if compiler(>=5.9)
 #if os(iOS)

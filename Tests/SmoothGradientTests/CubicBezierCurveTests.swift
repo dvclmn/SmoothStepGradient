@@ -9,7 +9,7 @@
 //
 
 import XCTest
-@testable import SmoothGradient
+@testable import SmoothStepGradient
 
 final class CubicBezierCurveTests: XCTestCase {
     func test_easeInOut() throws {

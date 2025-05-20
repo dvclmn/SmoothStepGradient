@@ -29,7 +29,7 @@ extension Gradient {
         curve: UnitCurve = .easeInOut,
         steps: Int = 16
     ) -> Gradient {
-        return makeSmoothGradient(
+        return makeSmoothStepGradient(
             from: Stop(color: from, location: 0),
             to: Stop(color: to, location: 1),
             curve: curve,
@@ -52,7 +52,7 @@ extension Gradient {
         curve: UnitCurve = .easeInOut,
         steps: Int = 16
     ) -> Gradient {
-        return makeSmoothGradient(
+        return makeSmoothStepGradient(
             from: from,
             to: to,
             curve: curve,
@@ -113,7 +113,7 @@ extension Gradient {
         easing curve: CubicBezierCurve = .easeInOut,
         steps: Int = 16
     ) -> Gradient {
-        return makeSmoothGradient(
+        return makeSmoothStepGradient(
             from: from,
             to: to,
             curve: curve,
@@ -125,7 +125,7 @@ extension Gradient {
 // MARK: - Factory
 
 extension Gradient {
-    private static func makeSmoothGradient(
+    private static func makeSmoothStepGradient(
         from: Stop,
         to: Stop,
         curve: Curve,

@@ -11,7 +11,7 @@
 import XCTest
 import SwiftUI
 import SnapshotTesting
-import SmoothGradient
+import SmoothStepGradient
 
 #if os(iOS)
 final class GradientSmoothTests: XCTestCase {
